@@ -3,7 +3,7 @@
 ## Objective
 [Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+Design and implement a secure, scalable enterprise campus network that demonstrates core networking principles, including VLAN segmentation, inter-VLAN routing, dynamic routing protocols, redundancy, and foundational network security controls in a production-style environment.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
