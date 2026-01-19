@@ -3,7 +3,7 @@
 ## Objective
 [Brief Objective - Remove this afterwards]
 
-Design and implement a secure, scalable enterprise campus network that demonstrates core networking principles, including VLAN segmentation, inter-VLAN routing, dynamic routing protocols, redundancy, and foundational network security controls in a production-style environment.
+Design and implement a secure, scalable enterprise network that demonstrates core networking principles, including VLAN segmentation, inter-VLAN routing, dynamic routing protocols, redundancy, and foundational network security controls in a production-style environment.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
