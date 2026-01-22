@@ -34,11 +34,6 @@ Design and implement a secure, scalable enterprise network that demonstrates cor
 - Network Testing & Verification – Validated secure connectivity and routing behavior
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
 
 *Ref 1: Network Diagram*
 <img width="2556" height="1411" alt="NetworkLabStart" src="https://github.com/user-attachments/assets/b129eb5d-e46a-4215-bebc-8a29d6a6062a" />
