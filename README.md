@@ -166,3 +166,31 @@ Design and implement a secure, scalable enterprise network that demonstrates cor
 <img width="661" height="635" alt="Disabling Unused Ports DSW-A1" src="https://github.com/user-attachments/assets/bc4ea26a-0fb9-4a9d-ab80-e4abc49cd39e" />
 
 #### IP Addresses, Layer-3 Etherchannel, HSR
+1. Now we will assign IP addressing to R1’s interfaces and enable them. We will aim to meet the following conditions
+    * G0/0/0: DHCP client
+    * G0/1/0: DHCP client
+    * G0/0: 10.0.0.33/30
+    * G0/1: 10.0.0.76/32
+        * First, we will configure g0/0/0 and g0/1/0 on R1 to enable DHCP then configure each interface 
+            * R1(config)# int range g0/0/0, g0/1/0
+            * R1(config-if-range)# ip add dhcp
+            * R1(config-if-range)# no shutdown (enables the interfaces)
+   <img width="316" height="54" alt="EnablingDHCP on R1 Interfaces" src="https://github.com/user-attachments/assets/3f8d396e-311c-4f29-8ef0-09a146e37874" />
+
+        * Next, go into the other two interfaces to configure them starting with g0/0
+            * # int g0/0
+            * # ip address 10.0.0.33 255.255.255.252
+            * # no shutdown
+        * Now on g0/1
+            * # int g0/1
+            * # ip address 10.0.0.37 255.255.255.252
+            * # no shutdown
+   <img width="466" height="135" alt="StaticIPs on R1 g0:0 g0:1" src="https://github.com/user-attachments/assets/0f6bcb67-2a2f-4c94-b9be-f46b79b2dada" />
+
+        * Lastly we will configure the loopback interface 
+            * # int l0
+            * # ip address 10.0.0.76 255.255.255.255
+        * Verify all interface configurations with the command ‘# show ip interface brief’
+   <img width="484" height="194" alt="LoopbackInterfaceIPconfiguration and Verifying Interfaces" src="https://github.com/user-attachments/assets/ff321f2b-dd96-4606-a686-3e1a70dd8a29" />
+
+3. Next, we will enable IPv4 routing on all Core and Distribution switches
